@@ -26,6 +26,56 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    // --- Analytics Tracking ---
+    function trackEvent(eventName, params = {}) {
+        console.log(`[Analytics] Event: ${eventName}`, params);
+        // Replace with real GA/Pixel call:
+        // if(window.gtag) gtag('event', eventName, params);
+    }
+
+    // click tracking for CTA buttons
+    document.querySelectorAll('.custom-track').forEach(el => {
+        el.addEventListener('click', () => {
+            const trackId = el.getAttribute('data-track-id');
+            trackEvent(trackId, {
+                url: el.href,
+                text: el.innerText
+            });
+        });
+    });
+
+    // --- Lead Form Logic ---
+    const leadForm = document.getElementById('lead-form');
+    if (leadForm) {
+        leadForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const btn = leadForm.querySelector('button');
+            const feedback = document.getElementById('form-feedback');
+
+            // Loading State
+            const originalText = btn.innerText;
+            btn.innerText = 'Enviando...';
+            btn.disabled = true;
+
+            // Simulate API Call (would be fetch to backend)
+            setTimeout(() => {
+                // Success
+                btn.innerText = 'Enviado!';
+                feedback.innerText = 'Recebemos seus dados! Entraremos em contato em breve.';
+                feedback.className = 'form-feedback success';
+
+                // Track conversion
+                trackEvent('lead_form_success');
+
+                leadForm.reset();
+                setTimeout(() => {
+                    btn.innerText = originalText;
+                    btn.disabled = false;
+                }, 3000);
+            }, 1500);
+        });
+    }
+
     // --- Hero Animations ---
     const heroTimeline = gsap.timeline();
 
