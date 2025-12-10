@@ -696,10 +696,12 @@ button:focus-visible {
 
     /* Contact Split Layout */
     .contact-split {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 4rem;
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
         align-items: center;
+        max-width: 800px;
+        margin: 0 auto;
     }
 
     .contact-form-wrapper {
@@ -707,15 +709,17 @@ button:focus-visible {
         padding: 2.5rem;
         border-radius: 20px;
         border: 1px solid rgba(255, 255, 255, 0.05);
+        width: 100%;
     }
 
     .align-left {
-        text-align: left;
-        margin-bottom: 0.5rem;
+        text-align: center;
+        /* Centered for better flow in single column */
+        margin-bottom: 1rem;
     }
 
     .contact-text {
-        text-align: left;
+        text-align: center;
         color: var(--text-secondary);
         margin-bottom: 2rem;
         font-size: 1rem;
@@ -787,18 +791,24 @@ button:focus-visible {
         display: flex;
         flex-direction: column;
         justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100%;
     }
 
     .contact-direct-title {
-        font-size: 2rem;
+        font-size: 1.8rem;
         margin-bottom: 1rem;
     }
 
     .contact-buttons-stack {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        /* Reverted to row */
         gap: 1.5rem;
-        align-items: flex-start;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
     }
 
     .btn-whatsapp,
@@ -812,9 +822,9 @@ button:focus-visible {
         font-weight: 600;
         font-size: 1.1rem;
         transition: var(--transition-fast);
-        width: 100%;
-        /* Full width in stack */
-        max-width: 400px;
+        width: auto;
+        /* Reverted from 100% */
+        min-width: 250px;
     }
 
     .btn-whatsapp {
@@ -860,7 +870,7 @@ button:focus-visible {
     }
 
     .footer-logo {
-        height: 80px;
+        height: 40px;
     }
 
     .footer-links {
