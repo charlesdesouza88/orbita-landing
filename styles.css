@@ -522,6 +522,14 @@ button:focus-visible {
     font-size: 1.2rem;
 }
 
+.contact-actions {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
 .btn-whatsapp {
     display: inline-flex;
     align-items: center;
@@ -538,6 +546,24 @@ button:focus-visible {
 .btn-whatsapp:hover {
     background: #1ebc57;
     transform: scale(1.05);
+}
+
+.btn-instagram {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.8rem;
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: var(--transition-fast);
+}
+
+.btn-instagram:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(220, 39, 67, 0.5);
 }
 
 /* Footer */
