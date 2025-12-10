@@ -172,7 +172,7 @@ button:focus-visible {
     transform: translate(-50%, -50%);
     width: 500px;
     height: 500px;
-    background: radial-gradient(circle, rgba(47, 128, 237, 0.15) 0%, rgba(0, 0, 0, 0) 70%);
+    background: radial-gradient(circle, rgba(255, 107, 53, 0.15) 0%, rgba(47, 128, 237, 0.1) 40%, rgba(0, 0, 0, 0) 70%);
     border-radius: 50%;
     animation: pulse-glow 4s infinite alternate;
 }
@@ -270,8 +270,8 @@ button:focus-visible {
 */
 .ring-1 {
     /* Using pseudo element for the border, so we can use the div as a rotator wrapper if we moved planets inside.
-     But since planets are outside in HTML, I have to animate them separately properly.
-  */
+      But since planets are outside in HTML, I have to animate them separately properly.
+   */
 }
 
 /* Actually, let's just make the planets follow a circular path using offset-path if supported, or transform-origin. */
@@ -281,9 +281,9 @@ button:focus-visible {
     /* 150px radius + 20px half-height offset ?? */
     /* Easier: Translate to circumference, then rotate parent container. */
     /* But since I can't change HTML structure right now without rewriting file...
-     I will assume the JS will handle the complex orbiting or I will use a simple CSS trick.
-     Let's use the transform-origin trick on the element itself.
-  */
+      I will assume the JS will handle the complex orbiting or I will use a simple CSS trick.
+      Let's use the transform-origin trick on the element itself.
+   */
     top: 50%;
     left: 50%;
     transform: rotate(0deg) translate(150px) rotate(0deg);
@@ -399,8 +399,8 @@ button:focus-visible {
 .arrow-down {
     width: 10px;
     height: 10px;
-    border-right: 2px solid var(--text-secondary);
-    border-bottom: 2px solid var(--text-secondary);
+    border-right: 2px solid var(--accent);
+    border-bottom: 2px solid var(--accent);
     transform: rotate(45deg);
 }
 
@@ -437,10 +437,20 @@ button:focus-visible {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
 }
 
+/* Alternating Orange Accents */
+.service-card:nth-child(even):hover {
+    border-color: var(--accent);
+    box-shadow: 0 10px 30px rgba(255, 107, 53, 0.2);
+}
+
 .service-card .icon-box {
     margin-bottom: 1.5rem;
     color: var(--primary);
     transition: var(--transition-fast);
+}
+
+.service-card:nth-child(even) .icon-box {
+    color: var(--accent);
 }
 
 .service-card:hover .icon-box {
