@@ -72,7 +72,7 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.5rem 5%;
+    padding: 1rem 5%;
     z-index: 1000;
     background: rgba(5, 5, 5, 0.8);
     backdrop-filter: blur(10px);
@@ -86,8 +86,11 @@ a {
 }
 
 .nav-logo {
-    height: 90px;
+    height: 60px;
     width: auto;
+    transform: scale(1.6);
+    margin-left: 10px;
+    /* Compensation for scale */
 }
 
 .nav-links {
