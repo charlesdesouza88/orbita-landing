@@ -155,6 +155,21 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
+    // Pricing Reveal
+    gsap.utils.toArray('.pricing-card').forEach((card, i) => {
+        gsap.from(card, {
+            scrollTrigger: {
+                trigger: card,
+                start: 'top 80%',
+            },
+            y: 50,
+            opacity: 0,
+            duration: 0.8,
+            delay: i * 0.15,
+            ease: 'power3.out'
+        });
+    });
+
     // Contact Parallax/Reveal
     gsap.from('.contact-center', {
         scrollTrigger: {

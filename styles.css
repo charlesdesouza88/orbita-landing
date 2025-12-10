@@ -547,6 +547,150 @@ button:focus-visible {
     font-weight: 500;
 }
 
+/* Pricing Section */
+.pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    align-items: center;
+    /* Center vertically so proper height highlight works */
+}
+
+.pricing-card {
+    background: var(--bg-card);
+    padding: 3rem 2rem;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    position: relative;
+    transition: var(--transition-fast);
+    display: flex;
+    flex-direction: column;
+}
+
+.pricing-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--primary);
+}
+
+.pricing-card.featured {
+    border: 2px solid var(--accent);
+    padding: 3.5rem 2rem;
+    /* Slightly larger */
+    background: rgba(20, 20, 20, 0.8);
+    box-shadow: 0 0 30px rgba(255, 107, 53, 0.1);
+    z-index: 2;
+}
+
+.badge {
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--accent);
+    color: white;
+    padding: 0.5rem 1.5rem;
+    border-radius: 50px;
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    box-shadow: 0 5px 15px rgba(255, 107, 53, 0.4);
+}
+
+.plan-name {
+    font-size: 1.5rem;
+    color: var(--text-secondary);
+    margin-bottom: 0.5rem;
+}
+
+.featured .plan-name {
+    color: var(--accent);
+}
+
+.plan-price {
+    font-size: 2.5rem;
+    font-family: var(--font-heading);
+    font-weight: 700;
+    color: white;
+    margin-bottom: 0.5rem;
+}
+
+.plan-price .period {
+    font-size: 1rem;
+    color: var(--text-secondary);
+    font-weight: 400;
+}
+
+.plan-audience {
+    font-size: 0.9rem;
+    color: white;
+    margin-bottom: 2rem;
+    font-style: italic;
+    opacity: 0.8;
+}
+
+.plan-features {
+    list-style: none;
+    margin-bottom: 2rem;
+    flex-grow: 1;
+}
+
+.plan-features li {
+    margin-bottom: 1rem;
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.plan-features li::before {
+    content: '✓';
+    color: var(--primary);
+}
+
+.featured .plan-features li::before {
+    color: var(--accent);
+}
+
+.btn-plan {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    color: white;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    transition: var(--transition-fast);
+}
+
+.btn-plan:hover {
+    border-color: var(--primary);
+    background: var(--primary);
+    box-shadow: 0 0 20px var(--glow-primary);
+}
+
+.btn-featured {
+    background: var(--accent);
+    border-color: var(--accent);
+    box-shadow: 0 0 15px rgba(255, 107, 53, 0.3);
+}
+
+.btn-featured:hover {
+    background: #FF8A5B;
+    border-color: #FF8A5B;
+    box-shadow: 0 0 30px var(--glow-accent);
+}
+
+.microcopy {
+    display: block;
+    text-align: center;
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.4);
+}
+
 /* Contact Section */
 .content-center {
 
