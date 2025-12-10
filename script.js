@@ -2,6 +2,30 @@ document.addEventListener('DOMContentLoaded', () => {
     // Register GSAP Plugins
     gsap.registerPlugin(ScrollTrigger);
 
+    // Mobile Menu Toggle
+    const mobileBtn = document.querySelector('.mobile-menu-btn');
+    const navLinks = document.querySelector('.nav-links');
+
+    if (mobileBtn) {
+        mobileBtn.addEventListener('click', () => {
+            mobileBtn.classList.toggle('active');
+            navLinks.classList.toggle('active');
+
+            // Update ARIA attribute
+            const expanded = mobileBtn.getAttribute('aria-expanded') === 'true' || false;
+            mobileBtn.setAttribute('aria-expanded', !expanded);
+        });
+
+        // Close menu when link is clicked
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileBtn.classList.remove('active');
+                navLinks.classList.remove('active');
+                mobileBtn.setAttribute('aria-expanded', 'false');
+            });
+        });
+    }
+
     // --- Hero Animations ---
     const heroTimeline = gsap.timeline();
 
