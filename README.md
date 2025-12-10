@@ -1,39 +1,44 @@
-# 🌐 Orbita Landing Page
+# 🌐 Orbita Landing Page (v2.0)
 
-This is the official landing page for **Orbita** — a tech company focused on building powerful digital tools for businesses. We specialize in creating custom websites, web applications, automation systems, social media strategies, IT support, and cybersecurity solutions.
+This is the high-performance landing page for **Orbita** — a tech company focused on building powerful digital tools for businesses. We specialize in custom web apps, automation systems, and scaling digital operations.
 
-## ✨ Purpose
+**Live Demo:** [https://orbita-landing-rho.vercel.app](https://orbita-landing-rho.vercel.app)
 
-The goal of this page is to introduce Orbita's core offerings and provide a direct contact channel for potential clients and partners.
+## ✨ Features (v2.0)
+
+- **High-Convertion Hero:** Benefit-driven copy with animated orbit visualization.
+- **Social Proof:** Client testimonials section ("Quem já está em órbita").
+- **Pricing Table:** Interactive 3-column pricing grid (Start, Pro, Full).
+- **Lead Generation:** Integrated contact form for free site analysis + direct WhatsApp/Instagram buttons.
+- **Micro-Animations:** Powered by **GSAP** & **ScrollTrigger** for premium feel.
+- **Analytics Ready:** Custom event tracking helper for clicks and conversions.
+- **Fully Responsive:** Custom mobile menu and optimized touch targets.
+- **Accessibility:** Semantic HTML, ARIA labels, and reduced motion support.
 
 ## 🧱 Tech Stack
 
-- **HTML5 & CSS3** (no JS required)
-- Mobile‑responsive layout (flexbox/grid)
-- Dark theme with modern UI accents
-- Ready for deployment on **Vercel** or **Netlify**
-
-## 🧰 Features
-
-- Hero section with CTA to WhatsApp
-- Services overview (Web Dev, Social Media, IT & Cybersecurity)
-- Clean responsive design
-- Lightweight, fast, and SEO-friendly
+- **HTML5** (Semantic & Accessible)
+- **CSS3** (Variables, Flexbox, Grid, Glassmorphism)
+- **JavaScript** (ES6+)
+- **Libraries:**
+  - [GSAP](https://greensock.com/gsap/) (Core Animation)
+  - [ScrollTrigger](https://greensock.com/scrolltrigger/) (Scroll Interactions)
 
 ## 🚀 Deployment
 
-This project is 100% static and requires no backend. To deploy:
+This project is optimized for **Vercel**.
 
-1. Fork or clone the repo
+1. Clone the repo
 2. Push to GitHub
-3. Connect to **Vercel** or **Netlify**
-4. Done!
+3. Connect project in Vercel Dashboard
+4. Done! (No build configuration required)
 
 ## 📞 Contact
 
 Interested in working with us?  
-📲 [Click here to contact us via WhatsApp](https://wa.me/SEUNUMERO?text=Quero%20conhecer%20a%20Orbita)
+📲 [Talk on WhatsApp](https://wa.me/5533997089982)  
+📸 [Follow on Instagram](https://www.instagram.com/orbitasolucoes)
 
 ---
 
-© 2024 Orbita – Todos os direitos reservados
+© 2024 Orbita Solutions – Building the Future.
