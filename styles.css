@@ -121,6 +121,8 @@ a {
 .nav-links .btn-primary:hover,
 .nav-links .btn-primary:focus-visible {
     background: var(--primary);
+    color: white;
+    /* Ensure text remains white on blue background */
     box-shadow: 0 0 15px var(--glow-primary);
 }
 
