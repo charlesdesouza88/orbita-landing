@@ -27,6 +27,13 @@ A fast, responsive landing page for Orbita - a digital solutions company special
 1. Connect your GitHub repository to Netlify
 2. Deploy automatically - configuration included in `netlify.toml`
 
+## Configuration
+
+Before deploying, update the WhatsApp contact number in `index.html`:
+- Find the `TODO` comment in the CTA section
+- Replace the placeholder number with your WhatsApp number in international format
+- Example: `https://wa.me/5511999999999` (country code + number, no spaces or special characters)
+
 ## Local Development
 
 Simply open `index.html` in your browser to view the landing page locally.
