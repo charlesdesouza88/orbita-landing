@@ -65,10 +65,13 @@
         </button>
 
         <div class="nav-links">
-            <a href="#services">Serviços</a>
-            <a href="#testimonials">Clientes</a>
-            <a href="#why-orbita">Diferenciais</a>
-            <a href="#contact" class="btn-primary">Fale Conosco</a>
+            <a href="#services" data-i18n="nav_services">Serviços</a>
+            <a href="#testimonials" data-i18n="nav_clients">Clientes</a>
+            <a href="#why-orbita" data-i18n="nav_diff">Diferenciais</a>
+            <a href="#contact" class="btn-primary" data-i18n="nav_contact">Fale Conosco</a>
+            <button id="lang-toggle" class="lang-btn" aria-label="Switch Language">
+                <span class="lang-text">EN</span>
+            </button>
         </div>
     </nav>
 
@@ -110,18 +113,19 @@
         <main>
             <div class="hero-content">
                 <h1 class="hero-title">
-                    <span class="reveal-text">Tecnologia que gravita</span>
+                    <span class="reveal-text" data-i18n="hero_title_1">Tecnologia que gravita</span>
                     <br>
-                    <span class="reveal-text highlight">em torno do seu sucesso</span>
+                    <span class="reveal-text highlight" data-i18n="hero_title_2">em torno do seu sucesso</span>
                 </h1>
-                <p class="hero-subtitle reveal-text">Automatize processos, escale vendas e blinde seus dados com nossas
+                <p class="hero-subtitle reveal-text" data-i18n="hero_subtitle">Automatize processos, escale vendas e
+                    blinde seus dados com nossas
                     soluções digitais completas.</p>
-                <a href="#contact" class="btn-hero glow-effect">Fale com a Orbita</a>
+                <a href="#contact" class="btn-hero glow-effect" data-i18n="hero_cta">Fale com a Orbita</a>
             </div>
 
             <!-- Scroll Indicator -->
             <div class="scroll-indicator">
-                <span>Explore</span>
+                <span data-i18n="scroll_explore">Explore</span>
                 <div class="arrow-down"></div>
             </div>
     </section>
@@ -129,7 +133,7 @@
     <!-- What We Build Section -->
     <section id="services" class="services section-padding">
         <div class="container">
-            <h2 class="section-title">O que construímos</h2>
+            <h2 class="section-title" data-i18n="sec_services">O que construímos</h2>
             <div class="services-grid">
                 <!-- Service 1: Web Dev -->
                 <div class="service-card" data-tilt>
@@ -140,8 +144,9 @@
                             <polyline points="8 6 2 12 8 18"></polyline>
                         </svg>
                     </div>
-                    <h3>Desenvolvimento Web</h3>
-                    <p>Sites de alta performance, landing pages que convertem e aplicações web progressivas.</p>
+                    <h3 data-i18n="service_1_title">Desenvolvimento Web</h3>
+                    <p data-i18n="service_1_desc">Sites de alta performance, landing pages que convertem e aplicações
+                        web progressivas.</p>
                 </div>
 
                 <!-- Service 2: SaaS Tools -->
@@ -152,8 +157,9 @@
                             <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
                         </svg>
                     </div>
-                    <h3>SaaS & Ferramentas</h3>
-                    <p>Sistemas sob medida para escalar seu negócio e automatizar operações complexas.</p>
+                    <h3 data-i18n="service_2_title">SaaS & Ferramentas</h3>
+                    <p data-i18n="service_2_desc">Sistemas sob medida para escalar seu negócio e automatizar operações
+                        complexas.</p>
                 </div>
 
                 <!-- Service 3: Social Media -->
@@ -167,8 +173,9 @@
                             <circle cx="4" cy="4" r="2"></circle>
                         </svg>
                     </div>
-                    <h3>Gestão de Redes Sociais</h3>
-                    <p>Estratégia de conteúdo e design para engajar sua audiência nas principais plataformas.</p>
+                    <h3 data-i18n="service_3_title">Gestão de Redes Sociais</h3>
+                    <p data-i18n="service_3_desc">Estratégia de conteúdo e design para engajar sua audiência nas
+                        principais plataformas.</p>
                 </div>
 
                 <!-- Service 4: IT Support -->
@@ -181,8 +188,9 @@
                             <line x1="12" y1="17" x2="12" y2="21"></line>
                         </svg>
                     </div>
-                    <h3>Suporte em TI</h3>
-                    <p>Manutenção preventiva e suporte técnico ágil para manter sua empresa rodando.</p>
+                    <h3 data-i18n="service_4_title">Suporte em TI</h3>
+                    <p data-i18n="service_4_desc">Manutenção preventiva e suporte técnico ágil para manter sua empresa
+                        rodando.</p>
                 </div>
 
                 <!-- Service 5: Cybersecurity -->
@@ -194,8 +202,9 @@
                             <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
                         </svg>
                     </div>
-                    <h3>Cibersegurança</h3>
-                    <p>Proteção de dados e sistemas contra ameaças digitais com monitoramento constante.</p>
+                    <h3 data-i18n="service_5_title">Cibersegurança</h3>
+                    <p data-i18n="service_5_desc">Proteção de dados e sistemas contra ameaças digitais com monitoramento
+                        constante.</p>
                 </div>
             </div>
         </div>
@@ -204,27 +213,31 @@
     <!-- Why Orbita Section -->
     <section id="why-orbita" class="why-orbita section-padding">
         <div class="container">
-            <h2 class="section-title">Por que Orbita?</h2>
+            <h2 class="section-title" data-i18n="why_title">Por que Orbita?</h2>
             <div class="benefits-grid">
                 <div class="benefit-item">
                     <div class="benefit-number">01</div>
-                    <h4>Ferramentas Customizadas</h4>
-                    <p>Não entregamos templates prontos. Desenvolvemos o que seu negócio realmente precisa.</p>
+                    <h4 data-i18n="benefit_1_title">Ferramentas Customizadas</h4>
+                    <p data-i18n="benefit_1_desc">Não entregamos templates prontos. Desenvolvemos o que seu negócio
+                        realmente precisa.</p>
                 </div>
                 <div class="benefit-item">
                     <div class="benefit-number">02</div>
-                    <h4>Design Futurista</h4>
-                    <p>Interface moderna, dark mode nativo e foco na experiência do usuário (UX).</p>
+                    <h4 data-i18n="benefit_2_title">Design Futurista</h4>
+                    <p data-i18n="benefit_2_desc">Interface moderna, dark mode nativo e foco na experiência do usuário
+                        (UX).</p>
                 </div>
                 <div class="benefit-item">
                     <div class="benefit-number">03</div>
-                    <h4>Foco em Automação</h4>
-                    <p>Reduza trabalho manual e aumente a eficiência com nossos sistemas inteligentes.</p>
+                    <h4 data-i18n="benefit_3_title">Foco em Automação</h4>
+                    <p data-i18n="benefit_3_desc">Reduza trabalho manual e aumente a eficiência com nossos sistemas
+                        inteligentes.</p>
                 </div>
                 <div class="benefit-item">
                     <div class="benefit-number">04</div>
-                    <h4>Onboarding 1:1</h4>
-                    <p>Acompanhamento humano e próximo para garantir o sucesso da implementação.</p>
+                    <h4 data-i18n="benefit_4_title">Onboarding 1:1</h4>
+                    <p data-i18n="benefit_4_desc">Acompanhamento humano e próximo para garantir o sucesso da
+                        implementação.</p>
                 </div>
             </div>
         </div>
@@ -233,7 +246,7 @@
     <!-- Social Proof / Testimonials -->
     <section id="testimonials" class="testimonials section-padding">
         <div class="container">
-            <h2 class="section-title">Quem já está em órbita</h2>
+            <h2 class="section-title" data-i18n="testimonials_title">Quem já está em órbita</h2>
             <div class="testimonials-grid">
                 <div class="testimonial-card">
                     <p class="quote">"A Orbita transformou nossa operação digital. Automatizamos 40% do nosso
@@ -266,45 +279,46 @@
     <!-- Pricing Plans Section -->
     <section id="plans" class="plans section-padding">
         <div class="container">
-            <h2 class="section-title">Planos que cabem no bolso</h2>
+            <h2 class="section-title" data-i18n="plans_title">Planos que cabem no bolso</h2>
             <div class="pricing-grid">
                 <!-- Plan 1: Start -->
                 <div class="pricing-card">
                     <h3 class="plan-name">Plano Start</h3>
-                    <div class="plan-price">R$299 <span class="period">/único</span></div>
-                    <p class="plan-audience">✅ Para autônomos e negócios locais</p>
+                    <div class="plan-price">R$299 <span class="period" data-i18n="plan_start_period">/único</span></div>
+                    <p class="plan-audience" data-i18n="plan_start_audience">✅ Para autônomos e negócios locais</p>
                     <ul class="plan-features">
                         <li>Site institucional responsivo (até 5 seções)</li>
                         <li>Domínio + e-mail profissional</li>
                         <li>Botão de contato com WhatsApp</li>
                         <li>Entrega em até 7 dias</li>
                     </ul>
-                    <a href="#contact" class="btn-plan custom-track" data-track-id="plan_start">Contratar Agora</a>
-                    <span class="microcopy">Sem mensalidade</span>
+                    <a href="#contact" class="btn-plan custom-track" data-track-id="plan_start"
+                        data-i18n="plan_start_cta">Contratar Agora</a>
+                    <span class="microcopy" data-i18n="plan_start_micro">Sem mensalidade</span>
                 </div>
 
                 <!-- Plan 2: Pro Tools (Recommended) -->
                 <div class="pricing-card featured">
                     <div class="badge">Recomendado</div>
                     <h3 class="plan-name">Pro Tools</h3>
-                    <div class="plan-price">R$599 <span class="period">/único</span></div>
-                    <p class="plan-audience">✅ Para coaches, consultórios, freelancers</p>
+                    <div class="plan-price">R$599 <span class="period" data-i18n="plan_pro_period">/único</span></div>
+                    <p class="plan-audience" data-i18n="plan_pro_audience">✅ Para coaches, consultórios, freelancers</p>
                     <ul class="plan-features">
                         <li><strong>Tudo do plano Start +</strong></li>
                         <li>Web app personalizado (agendamento, dashboard)</li>
                         <li>Integração (Calendar, Notion, WhatsApp)</li>
                         <li>Captura de leads + automação</li>
                     </ul>
-                    <a href="#contact" class="btn-plan btn-featured custom-track" data-track-id="plan_pro">Quero
-                        Automatizar</a>
-                    <span class="microcopy">Parcelamento disponível</span>
+                    <a href="#contact" class="btn-plan btn-featured custom-track" data-track-id="plan_pro"
+                        data-i18n="plan_pro_cta">Quero Automatizar</a>
+                    <span class="microcopy" data-i18n="plan_pro_micro">Parcelamento disponível</span>
                 </div>
 
                 <!-- Plan 3: Orbita Full -->
                 <div class="pricing-card">
                     <h3 class="plan-name">Orbita Full</h3>
-                    <div class="plan-price">R$999+ <span class="period">/proj</span></div>
-                    <p class="plan-audience">✅ Para empresas em crescimento</p>
+                    <div class="plan-price">R$999+ <span class="period" data-i18n="plan_full_period">/proj</span></div>
+                    <p class="plan-audience" data-i18n="plan_full_audience">✅ Para empresas em crescimento</p>
                     <ul class="plan-features">
                         <li><strong>Tudo dos anteriores +</strong></li>
                         <li>Sistema web completo (área logada)</li>
@@ -312,9 +326,9 @@
                         <li>Identidade visual básica</li>
                         <li>Suporte TI + Cibersegurança inicial</li>
                     </ul>
-                    <a href="#contact" class="btn-plan custom-track" data-track-id="plan_full">Fale com um
-                        Especialista</a>
-                    <span class="microcopy">Orçamento personalizado</span>
+                    <a href="#contact" class="btn-plan custom-track" data-track-id="plan_full"
+                        data-i18n="plan_full_cta">Fale com um Especialista</a>
+                    <span class="microcopy" data-i18n="plan_full_micro">Orçamento personalizado</span>
                 </div>
             </div>
         </div>
@@ -326,23 +340,26 @@
             <div class="contact-split">
                 <!-- Lead Form -->
                 <div class="contact-form-wrapper">
-                    <h2 class="section-title align-left">Receba uma análise gratuita</h2>
-                    <p class="contact-text">Descubra pontos cegos no seu site ou operação digital. Preencha e receba um
+                    <h2 class="section-title align-left" data-i18n="contact_title">Receba uma análise gratuita</h2>
+                    <p class="contact-text" data-i18n="contact_subtitle">Descubra pontos cegos no seu site ou operação
+                        digital. Preencha e receba um
                         diagnóstico do nosso time.</p>
 
                     <form id="lead-form" class="lead-form">
                         <div class="form-group">
-                            <input type="text" id="name" name="name" placeholder="Seu Nome" required class="form-input">
+                            <input type="text" id="name" name="name" placeholder="Seu Nome" required class="form-input"
+                                data-i18n="contact_name_ph">
                         </div>
                         <div class="form-group">
                             <input type="email" id="email" name="email" placeholder="E-mail Corporativo" required
-                                class="form-input">
+                                class="form-input" data-i18n="contact_email_ph">
                         </div>
                         <div class="form-group">
                             <input type="url" id="website" name="website" placeholder="Seu Site (https://...)"
-                                class="form-input">
+                                class="form-input" data-i18n="contact_site_ph">
                         </div>
-                        <button type="submit" class="btn-submit custom-track" data-track-id="lead_form_submit">
+                        <button type="submit" class="btn-submit custom-track" data-track-id="lead_form_submit"
+                            data-i18n="contact_submit">
                             Solicitar Análise Gratuita
                         </button>
                     </form>
@@ -351,8 +368,9 @@
 
                 <!-- Direct Contact -->
                 <div class="contact-direct">
-                    <h3 class="contact-direct-title">Ou fale agora mesmo</h3>
-                    <p class="contact-text">Prefere agilidade? Nosso time está online no WhatsApp.</p>
+                    <h3 class="contact-direct-title" data-i18n="contact_or">Ou fale agora mesmo</h3>
+                    <p class="contact-text" data-i18n="contact_direct_sub">Prefere agilidade? Nosso time está online no
+                        WhatsApp.</p>
 
                     <div class="contact-buttons-stack">
                         <a href="https://wa.me/5533997089982" class="btn-whatsapp pulse-animation custom-track"
@@ -362,7 +380,7 @@
                                 <path
                                     d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592z" />
                             </svg>
-                            Fale com a Orbita no WhatsApp
+                            <span data-i18n="btn_whatsapp">Fale com a Orbita no WhatsApp</span>
                         </a>
                         <a href="https://www.instagram.com/orbitasolucoes" class="btn-instagram custom-track"
                             data-track-id="instagram_click" target="_blank" rel="noopener noreferrer">
@@ -371,7 +389,7 @@
                                 <path
                                     d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.232-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.047-1.096-.047-3.232 0-2.136.009-2.388.047-3.231.036-.78.166-1.204.275-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
                             </svg>
-                            Siga no Instagram
+                            <span data-i18n="btn_instagram">Siga no Instagram</span>
                         </a>
                     </div>
                 </div>

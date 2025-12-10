@@ -124,6 +124,29 @@ a {
     box-shadow: 0 0 15px var(--glow-primary);
 }
 
+/* Language Button */
+.lang-btn {
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: white;
+    padding: 0.4rem 0.8rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-family: var(--font-body);
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: var(--transition-fast);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.lang-btn:hover {
+    border-color: var(--primary);
+    color: var(--primary);
+    background: rgba(47, 128, 237, 0.1);
+}
+
 a:focus-visible,
 button:focus-visible {
     outline: 2px solid var(--primary);
