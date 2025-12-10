@@ -695,13 +695,16 @@ button:focus-visible {
 .content-center {
 
     /* Contact Split Layout */
+    /* Contact Split Layout */
     .contact-split {
         display: flex;
         flex-direction: column;
         gap: 3rem;
         align-items: center;
-        max-width: 800px;
+        max-width: 600px;
+        /* Reduced max-width for better vertical flow */
         margin: 0 auto;
+        width: 100%;
     }
 
     .contact-form-wrapper {
@@ -714,7 +717,6 @@ button:focus-visible {
 
     .align-left {
         text-align: center;
-        /* Centered for better flow in single column */
         margin-bottom: 1rem;
     }
 
@@ -803,17 +805,18 @@ button:focus-visible {
 
     .contact-buttons-stack {
         display: flex;
-        flex-direction: row;
-        /* Reverted to row */
-        gap: 1.5rem;
+        flex-direction: column;
+        /* Stacked vertically */
+        gap: 1rem;
         align-items: center;
         justify-content: center;
-        flex-wrap: wrap;
+        width: 100%;
     }
 
     .btn-whatsapp,
     .btn-instagram {
-        display: inline-flex;
+        display: flex;
+        /* Flex to align icon and text */
         align-items: center;
         justify-content: center;
         gap: 0.8rem;
@@ -822,9 +825,8 @@ button:focus-visible {
         font-weight: 600;
         font-size: 1.1rem;
         transition: var(--transition-fast);
-        width: auto;
-        /* Reverted from 100% */
-        min-width: 250px;
+        width: 100%;
+        /* Full width */
     }
 
     .btn-whatsapp {
