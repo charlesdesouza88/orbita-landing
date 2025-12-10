@@ -699,6 +699,9 @@ button:focus-visible {
     background: var(--accent);
     border-color: var(--accent);
     box-shadow: 0 0 15px rgba(255, 107, 53, 0.3);
+    color: #000;
+    /* High Contrast for Neon Orange */
+    font-weight: 700;
 }
 
 .btn-featured:hover {
@@ -854,7 +857,9 @@ button:focus-visible {
 
 .btn-whatsapp {
     background: #25D366;
-    color: white;
+    color: #000;
+    /* High Contrast for Bright Green */
+    font-weight: 700;
 }
 
 .btn-whatsapp:hover {
@@ -975,8 +980,12 @@ button:focus-visible {
     display: none;
     flex-direction: column;
     justify-content: space-between;
-    width: 30px;
-    height: 21px;
+    width: 44px;
+    /* Increased width */
+    height: 35px;
+    /* Increased height */
+    padding: 5px;
+    /* Added padding for better hit area */
     background: transparent;
     border: none;
     cursor: pointer;
